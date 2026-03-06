@@ -3,7 +3,8 @@ import os
 from datetime import datetime
 
 # 1. Configuration avec la nouvelle bibliothèque 2026
-client = genai.Client(api_key=os.environ.get("GEMINI_OSI"))
+api_key = os.environ.get("GEMINI_OSI")
+genai.configure(api_key=api_key)
 
 # 2. Vos sources
 sources_context = """
@@ -14,7 +15,10 @@ sources_context = """
 """
 
 # 3. Le Prompt
-prompt = f"Génère UNIQUEMENT le code HTML contenu à l'intérieur de la balise <main> pour un tableau de bord de veille IA. Utilise Tailwind CSS avec 3 colonnes, des cartes avec la classe 'neo-card' (bordure noire 2px, ombre portée). Thèmes : {sources_context}. Date : {datetime.now().strftime('%d/%m/%Y')}."
+prompt = f"""Génère UNIQUEMENT le code HTML contenu à l'intérieur de la balise <main> pour un tableau de bord de veille IA.
+Utilise Tailwind CSS avec 3 colonnes, des cartes avec la classe 'neo-card' (bordure noire 2px, ombre portée).
+Thèmes : {sources_context}. Date : {datetime.now().strftime('%d/%m/%Y')}.
+"""
 
 def main():
     try:
