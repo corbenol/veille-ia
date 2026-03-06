@@ -20,7 +20,7 @@ def main():
     try:
         # Utilisation du modèle 'gemini-2.0-flash' (standard en 2026)
         response = client.models.generate_content(
-            model='gemini-1.5-flash-latest', 
+            model='gemini-1.5-flash', 
             contents=prompt
         )
         new_content = response.text
