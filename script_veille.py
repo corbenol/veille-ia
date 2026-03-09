@@ -62,7 +62,7 @@ def main():
 </head>
 <body class="bg-gray-50 p-6">
     <header class="mb-8"><h1 class="text-3xl font-black border-b-4 border-black inline-block">VEILLE IA AUTO</h1></header>
-    <main class="grid md:grid-cols-3 gap-6">
+    <main class="grid gap-6">
         {new_content}
     </main>
 </body></html>"""
