@@ -21,7 +21,7 @@ jobs:
 
       - name: Installer les dépendances
         run: |
-          pip install google-generativeai==0.8.3
+          pip install google-generativeai==0.8.3 feedparser
 
       - name: Exécuter le script de veille Gemini
         env:
