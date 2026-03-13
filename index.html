@@ -3,46 +3,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Veille IA - Stratégie 2026</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Dashboard Veille IA Stratégique</title>
+    <script src="[https://cdn.tailwindcss.com](https://cdn.tailwindcss.com)"></script>
+    <link href="[https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap](https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap)" rel="stylesheet">
     <style>
-        .neo-card { border: 2px solid #000; box-shadow: 5px 5px 0px #000; transition: all 0.2s; }
-        .neo-card:hover { transform: translate(-2px, -2px); box-shadow: 7px 7px 0px #000; }
+        body { font-family: 'Inter', sans-serif; background-color: #f3f4f6; }
+        details > summary::-webkit-details-marker { display: none; }
     </style>
 </head>
-<body class="bg-gray-50 text-gray-900 p-6">
-    <header class="max-w-6xl mx-auto mb-12">
-        <h1 class="text-4xl font-black uppercase tracking-tighter border-b-4 border-black inline-block mb-4">🤖 Veille IA 2026</h1>
-        <p class="text-lg text-gray-600">Panorama stratégique IA.</p>
-    </header>
-
-    <main class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
-        <section class="space-y-4">
-            <h2 class="text-2xl font-bold bg-yellow-300 px-2 py-1 inline-block border-2 border-black">⚖️ Gouvernance</h2>
-            <div class="neo-card bg-white p-4 space-y-3">
-                <h3 class="font-bold">Régulation & Justice</h3>
-                <p class="text-sm">Actions contre les dérives sexistes (Grok) et contrôle émotionnel en Chine.</p>
-                <span class="text-xs font-mono bg-gray-100 p-1">Source: Le Monde / Reuters</span>
+<body class="p-4 md:p-8">
+    <div class="max-w-7xl mx-auto bg-white rounded-xl shadow-xl p-6 md:p-8 border-t-8 border-indigo-600">
+        <header class="flex flex-col md:flex-row justify-between items-start md:items-center mb-10 border-b pb-6">
+            <div>
+                <h1 class="text-3xl font-black text-indigo-900 tracking-tight">DASHBOARD VEILLE IA</h1>
+                <p class="text-sm text-gray-500 mt-1">Généré de manière autonome par Agent IA - 13/03/2026 à 16:23</p>
             </div>
-        </section>
-
-        <section class="space-y-4">
-            <h2 class="text-2xl font-bold bg-blue-300 px-2 py-1 inline-block border-2 border-black">💰 Marché</h2>
-            <div class="neo-card bg-white p-4 space-y-3">
-                <h3 class="font-bold">Consolidation Majeure</h3>
-                <p class="text-sm">NVIDIA, Meta et Alphabet verrouillent l'infrastructure mondiale.</p>
-                <span class="text-xs font-mono bg-gray-100 p-1">Source: TechCrunch / WSJ</span>
+            <div class="mt-4 md:mt-0 bg-indigo-50 text-indigo-700 px-4 py-2 rounded-full text-xs font-bold border border-indigo-100 flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
+                Sourcing Automatique Actif
             </div>
-        </section>
+        </header>
 
-        <section class="space-y-4">
-            <h2 class="text-2xl font-bold bg-green-300 px-2 py-1 inline-block border-2 border-black">🚀 Tech & Agents</h2>
-            <div class="neo-card bg-white p-4 space-y-3">
-                <h3 class="font-bold">Modèles Open Source</h3>
-                <p class="text-sm">Émergence de GLM-4.7 et MiniMax 2.1 pour l'autonomie agentique.</p>
-                <span class="text-xs font-mono bg-gray-100 p-1">Source: HuggingFace / GitHub</span>
+        <main class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+    <section>
+        <h2 class="text-xl font-bold text-indigo-800 border-b-2 border-indigo-200 mb-4 pb-2">GOUVERNANCE</h2>
+        
+        <details class="mb-3 bg-white border border-gray-200 rounded-lg shadow-sm group">
+            <summary class="flex justify-between items-center cursor-pointer p-4 font-medium text-sm hover:text-indigo-600 list-none">
+                <span class="font-bold truncate pr-4" title="L'IA générative et l'influence des opinions">⚖️ L'IA générative et l'influence des opinions</span>
+                <span class="text-indigo-500 group-open:rotate-45 transition-transform text-xl flex-shrink-0">+</span>
+            </summary>
+            <div class="p-4 text-sm bg-gray-50 border-t border-gray-100 text-gray-700">
+                <p class="mb-3">Une étude révèle que l'IA générative, par de simples suggestions de mots, peut subtilement orienter les opinions des utilisateurs. Cela soulève d'importantes questions éthiques et de gouvernance quant à l'utilisation responsable et transparente de ces technologies influençant le discours public.</p>
+                <a href="https://news.google.com/rss/articles/CBMikAJBVV95cUxPWnQ0cUZKRGc3VHFVNEN4NWNISXJYdTltV2dnUVlQXzBwTzNqdkY0WWctMUtTZ0RuNk9yVUZ4MFNXcEFtQkE4UUdqbnlyOC1iVDlxbWtCUWtCMXZhVy1yZFNwYmM1N3lTUUw2SWRseE41MGVLcjIweU1OR0ZSbm0zeGdueXUzQ1FIekN3WGVBNndoNHFFVzVHWW4tSDNWS3RkdjF2MUNBWm91b0FLOFVNRjZUNWEyZFk3ZWZFRE85cWtwRE9IQm14SllycHhtTmI3WjZucjdMR1NlMFQ4WUMzRU5UYjZYcU9XcTdLY0pfQjVyN052cGZOdHpFOFJDQlo3OVVPQlp0MzRDNFBjMDNybw?oc=5" target="_blank" rel="noopener noreferrer" class="text-indigo-600 hover:text-indigo-800 underline font-semibold text-xs">Lire l'article complet →</a>
             </div>
-        </section>
-    </main>
+        </details>
+        
+        <details class="mb-3 bg-white border border-gray-200 rounded-lg shadow-sm group">
+            <summary class="flex justify-between items-center cursor-pointer p-4 font-medium text-sm hover:text-indigo-600 list-none">
+                <span class="font-bold truncate pr-4" title="L'IA complique le travail des salariés selon Berkeley">⚖️ L'IA complique le travail des salariés selon Berkeley</span>
+                <span class="text-indigo-500 group-open:rotate-45 transition-transform text-xl flex-shrink-0">+</span>
+            </summary>
+            <div class="p-4 text-sm bg-gray-50 border-t border-gray-100 text-gray-700">
+                <p class="mb-3">Des chercheuses de Berkeley estiment que l'IA ne simplifie pas toujours la vie des employés, mais peut au contraire complexifier leurs tâches. Ce constat met en lumière la nécessité d'une meilleure intégration et conception des outils IA en entreprise pour optimiser leur adoption et garantir le bien-être des travailleurs.</p>
+                <a href="https://news.google.com/rss/articles/CBMingJBVV95cUxPYzlNNmdQTzYyVDhXOUpfMC1pNFcweDRuSkM1amZnRjJONFhMcW5rd2RfOVBITWc4enhGaFBIRlh6WWhXell0LXBoTHJobkwyUFNyMGxnanJxbURqalJJbFlRako5cnBkd1lCZkE1YmJZdUxybko5VlZHN2JaZUpsNVl5ejR5VFYxQWxuT3Nyek9qbDJSUGpYX2s1U0tDQWhPSlBmV0toQmxDMFBJYjNHeFpaRGdKcldnTjl5dnYzWHo3NE01MTRTNnBoLTlMTjB0Sm44MmxIdGNjWXdmNnhmZDRUWjJ5eV93VXVvbEJvbm5hN2ZTRDZURDlWaTlQbVQ2ZHNOT1l0SS1HTTE0RG43QnJUX1oxb1VHMG4xR0JR?oc=5" target="_blank" rel="noopener noreferrer" class="text-indigo-600 hover:text-indigo-800 underline font-semibold text-xs">Lire l'article complet →</a>
+            </div>
+        </details>
+    </section>
+
+    <section>
+        <h2 class="text-xl font-bold text-indigo-800 border-b-2 border-indigo-200 mb-4 pb-2">MARCHÉ</h2>
+
+        <details class="mb-3 bg-white border border-gray-200 rounded-lg shadow-sm group">
+            <summary class="flex justify-between items-center cursor-pointer p-4 font-medium text-sm hover:text-indigo-600 list-none">
+                <span class="font-bold truncate pr-4" title="Google acquiert Wiz pour $32 milliards">📈 Google acquiert Wiz pour $32 milliards</span>
+                <span class="text-indigo-500 group-open:rotate-45 transition-transform text-xl flex-shrink-0">+</span>
+            </summary>
+            <div class="p-4 text-sm bg-gray-50 border-t border-gray-100 text-gray-700">
+                <p class="mb-3">Google a finalisé l'acquisition de la startup de cybersécurité Wiz pour 32 milliards de dollars, marquant la plus grande acquisition de capital-risque de l'histoire. Cette opération stratégique souligne l'importance croissante de la cybersécurité dans un contexte d'IA et de cloud, et renforce la position de Google sur ce marché critique.</p>
+                <a href="https://techcrunch.com/video/the-32b-acquisition-that-one-vc-is-calling-the-deal-of-the-decade/" target="_blank" rel="noopener noreferrer" class="text-indigo-600 hover:text-indigo-800 underline font-semibold text-xs">Lire l'article complet →</a>
+            </div>
+        </details>
+
+        <details class="mb-3 bg-white border border-gray-200 rounded-lg shadow-sm group">
+            <summary class="flex justify-between items-center cursor-pointer p-4 font-medium text-sm hover:text-indigo-600 list-none">
+                <span class="font-bold truncate pr-4" title="Peacock se tourne vers la vidéo et le sport par IA">📈 Peacock se tourne vers la vidéo et le sport par IA</span>
+                <span class="text-indigo-500 group-open:rotate-45 transition-transform text-xl flex-shrink-0">+</span>
+            </summary>
+            <div class="p-4 text-sm bg-gray-50 border-t border-gray-100 text-gray-700">
+                <p class="mb-3">La plateforme de streaming Peacock mise sur l'intelligence artificielle pour développer de nouvelles expériences vidéo, des clips verticaux dédiés au mobile et l'intégration de jeux. Cette stratégie vise à stimuler sa croissance et à améliorer l'engagement des utilisateurs en capitalisant sur les capacités de personnalisation de l'IA.</p>
+                <a href="https://techcrunch.com/2026/03/13/peacock-expands-into-ai-driven-video-mobile-first-live-sports-and-gaming/" target="_blank" rel="noopener noreferrer" class="text-indigo-600 hover:text-indigo-800 underline font-semibold text-xs">Lire l'article complet →</a>
+            </div>
+        </details>
+    </section>
+
+    <section>
+        <h2 class="text-xl font-bold text-indigo-800 border-b-2 border-indigo-200 mb-4 pb-2">TECH</h2>
+
+        <details class="mb-3 bg-white border border-gray-200 rounded-lg shadow-sm group">
+            <summary class="flex justify-between items-center cursor-pointer p-4 font-medium text-sm hover:text-indigo-600 list-none">
+                <span class="font-bold truncate pr-4" title="IA et l'avenir des métiers : l'analyse d'Anthropic">⚙️ IA et l'avenir des métiers : l'analyse d'Anthropic</span>
+                <span class="text-indigo-500 group-open:rotate-45 transition-transform text-xl flex-shrink-0">+</span>
+            </summary>
+            <div class="p-4 text-sm bg-gray-50 border-t border-gray-100 text-gray-700">
+                <p class="mb-3">Anthropic, acteur majeur de l'IA, révèle une nouvelle méthode pour identifier les métiers les plus et les moins menacés par l'intelligence artificielle. Cette étude offre des perspectives cruciales sur les transformations structurelles du marché du travail et les compétences de demain.</p>
+                <a href="https://news.google.com/rss/articles/CBMihwFBVV95cUxNTUUwOE9kbzJoQWRHWmVuQUluQjR4cVB0cFNQaEJWWEN4LTBrN3RadE5hemJVVkpLa01QaXhFaVdSS3RBLXBqdndhT1h4NUF6U0s5V0kzQlRQa2NJRl92QzEtNlRxbzZTNkFYeC1CNlhMMzdTaDZTQ3MzeWlpRkhNQU5INm0tYjg?oc=5" target="_blank" rel="noopener noreferrer" class="text-indigo-600 hover:text-indigo-800 underline font-semibold text-xs">Lire l'article complet →</a>
+            </div>
+        </details>
+
+        <details class="mb-3 bg-white border border-gray-200 rounded-lg shadow-sm group">
+            <summary class="flex justify-between items-center cursor-pointer p-4 font-medium text-sm hover:text-indigo-600 list-none">
+                <span class="font-bold truncate pr-4" title="L'IA révolutionne les mathématiques">⚙️ L'IA révolutionne les mathématiques</span>
+                <span class="text-indigo-500 group-open:rotate-45 transition-transform text-xl flex-shrink-0">+</span>
+            </summary>
+            <div class="p-4 text-sm bg-gray-50 border-t border-gray-100 text-gray-700">
+                <p class="mb-3">L'intelligence artificielle est en train de provoquer une révolution sans précédent dans le domaine des mathématiques, ouvrant de nouvelles voies de recherche et permettant la résolution de problèmes complexes jusqu'alors inaccessibles. Cette avancée promet d'accélérer l'innovation dans de multiples disciplines scientifiques et technologiques.</p>
+                <a href="https://news.google.com/rss/articles/CBMizAFBVV95cUxPaEZwRGNRX2UtWFh3WlBVOW5RYUpFcnRxNzNMdVlOZW9GUWJDdS1ENndQd1BZU2tuekxfRy1nbWNObUplemFpVXZwMDJNYkl2Q1IwUDVxczNobktrQ0g3aXZpTGRUV25OamZXWFFmZXpjazBaZzFRUHQyMjVPT1lDVm9CS0NIcHhaMmEwb3llc256YmRMQjdQYXZNZmFfRHlQMHhLSnk0OFQzRUVNTnJZakduNGFMTjdKMVpRWHJDdEZtTGoyS25HM1pnZG_SAdIBQVVfeXFMT2pKUmlUMFYwMjl0RG5MWGNpbGZFY3I2WUFwNUxkclRsd0xDSTlOYktGbnpHV0xnWFI3aFBabkV0MTJjZk1QUXhJWmdEWUo1YmJJMnNUSTlMQmtpNUsyZXQzeWNiQ01GWHBFSG5vSkktR3RBcjRGLW1LTWgzVVIzZmpEMWRfZ0dvaW1IX09pTFBkZUw3S3FTSW50ZGdZbjB6bFAyV2VuN2ZLbXFTVkVFWVJ1U2ZiVWRpdzZ1WlVVMmN5R2JXblJzc0pYN3pSNlJFOXFB?oc=5" target="_blank" rel="noopener noreferrer" class="text-indigo-600 hover:text-indigo-800 underline font-semibold text-xs">Lire l'article complet →</a>
+            </div>
+        </details>
+
+        <details class="mb-3 bg-white border border-gray-200 rounded-lg shadow-sm group">
+            <summary class="flex justify-between items-center cursor-pointer p-4 font-medium text-sm hover:text-indigo-600 list-none">
+                <span class="font-bold truncate pr-4" title="Qutwo : préparer les entreprises à l'informatique quantique">⚙️ Qutwo : préparer les entreprises à l'informatique quantique</span>
+                <span class="text-indigo-500 group-open:rotate-45 transition-transform text-xl flex-shrink-0">+</span>
+            </summary>
+            <div class="p-4 text-sm bg-gray-50 border-t border-gray-100 text-gray-700">
+                <p class="mb-3">Après avoir vendu sa startup d'IA à AMD, Peter Sarlin lance Qutwo, une nouvelle entreprise dédiée à la construction de l'infrastructure pour l'informatique quantique. Cette initiative vise à préparer les entreprises à l'arrivée imminente de cette technologie révolutionnaire, marquant un pont entre l'IA et le futur du calcul.</p>
+                <a href="https://techcrunch.com/2026/03/12/before-quantum-computing-arrives-this-startup-wants-enterprises-already-running-on-it/" target="_blank" rel="noopener noreferrer" class="text-indigo-600 hover:text-indigo-800 underline font-semibold text-xs">Lire l'article complet →</a>
+            </div>
+        </details>
+
+        <details class="mb-3 bg-white border border-gray-200 rounded-lg shadow-sm group">
+            <summary class="flex justify-between items-center cursor-pointer p-4 font-medium text-sm hover:text-indigo-600 list-none">
+                <span class="font-bold truncate pr-4" title="Un agent IA expert en science des données">⚙️ Un agent IA expert en science des données</span>
+                <span class="text-indigo-500 group-open:rotate-45 transition-transform text-xl flex-shrink-0">+</span>
+            </summary>
+            <div class="p-4 text-sm bg-gray-50 border-t border-gray-100 text-gray-700">
+                <p class="mb-3">Le blog Hugging Face met en avant la capacité d'un agent IA à "penser comme un data scientist", grâce à une génération d'outils réutilisables ayant permis d'atteindre la première place au défi DABStep. Cette avancée illustre le potentiel des agents autonomes pour automatiser et optimiser des tâches complexes en analyse de données.</p>
+                <a href="https://huggingface.co/blog/nvidia/nemo-agent-toolkit-data-explorer-dabstep-1st-place" target="_blank" rel="noopener noreferrer" class="text-indigo-600 hover:text-indigo-800 underline font-semibold text-xs">Lire l'article complet →</a>
+            </div>
+        </details>
+    </section>
+
+</div>
+        </main>
+    </div>
 </body>
 </html>
